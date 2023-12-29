@@ -33,7 +33,7 @@ public class Exercise {
         return link;
     }
 
-    
+
     public void setName(String name){
         this.name = name;
     }
