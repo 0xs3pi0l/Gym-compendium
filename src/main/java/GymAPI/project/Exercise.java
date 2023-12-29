@@ -12,6 +12,13 @@ public class Exercise {
 
     private String link;
 
+    public Exercise(Integer id, String name, String muscle, String equipment, String link){
+        this.id = id;
+        this.name = name;
+        this.muscle = muscle;
+        this.equipment = equipment;
+        this.link = link;
+    }
 
     public Integer getId(){
         return id;
