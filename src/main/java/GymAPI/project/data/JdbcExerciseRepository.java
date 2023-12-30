@@ -19,19 +19,14 @@ public class JdbcExerciseRepository implements ExerciseRepository{
     }
 
     @Override
-    public Exercise findExercise(String muscle, String equipment){
+    public List<Exercise> findExercises(String muscle, String equipment){
 
-        List<Exercise> exercise = jdbcTemplate.query(
+        List<Exercise> exercises = jdbcTemplate.query(
                 "select id, name, muscle, equipment, link from exercises where muscle=? and equipment=?",
                 this::mapRowtoExercise,
                 muscle, equipment
         );
-
-        if(exercise.size() == 0){
-            return new Exercise(null, null, null, null, null);
-        } else {
-            return exercise.get(0);
-        }
+            return exercises;
     }
 
     public List<Exercise> mapRowtoExercise(ResultSet row) throws SQLException {
