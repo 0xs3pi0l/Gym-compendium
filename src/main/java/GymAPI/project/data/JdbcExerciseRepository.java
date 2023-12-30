@@ -28,20 +28,17 @@ public class JdbcExerciseRepository implements ExerciseRepository{
                 this::mapRowtoExercise,
                 muscle, equipment
         );
-            return exercises;
-    }
-
-    public List<Exercise> mapRowtoExercise(ResultSet row) throws SQLException {
-        List exercises = new ArrayList();
-        exercises.add(
-                new Exercise(
-                        row.getInt("id"),
-                        row.getString("name"),
-                        row.getString("muscle"),
-                        row.getString("equipment"),
-                        row.getString("link")
-                ));
 
         return exercises;
-    };
+    }
+
+    public Exercise mapRowtoExercise(ResultSet row, int RowNum) throws SQLException {
+        return(new Exercise(
+                row.getInt("id"),
+                row.getString("name"),
+                row.getString("muscle"),
+                row.getString("equipment"),
+                row.getString("link")
+        ));
+    }
 }

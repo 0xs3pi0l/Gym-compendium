@@ -1,1 +1,5 @@
+GymAPI/project/data/JdbcExerciseRepository.class
+GymAPI/project/Exercise.class
+GymAPI/project/web/ExerciseController.class
 GymAPI/project/ProjectApplication.class
+GymAPI/project/data/ExerciseRepository.class
