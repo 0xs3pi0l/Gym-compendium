@@ -1,0 +1,92 @@
+/* Reset rules from https://www.joshwcomeau.com/css/custom-css-reset/"*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+#root, #__next {
+    isolation: isolate;
+}
+
+/* GENERAL STYLE */
+
+:root {
+    --clr-primary: #222831;
+    --clr-secondary: #f16a03;
+    --clr-accent: #f2f2f2;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: var(--clr-primary);
+}
+
+main {
+    margin: 0 auto;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+/* UPPER DIV */
+
+.search-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--clr-secondary);
+    border-radius: 15px;
+    margin: 2em; 
+}
+
+.search-div h3 {
+    margin: 1em;
+    align-self: center;
+}
+
+.search-div div {
+    display: flex;
+    justify-content: space-around;
+}
+
+select {
+    margin: 1em;
+}
+
+.search-div button {
+    margin: 2em;
+    border-radius: 15px;
+    border: none;
+    background-color: var(--clr-primary);
+    color: var(--clr-accent);
+    padding: 0.5em;
+    font-weight: 700;
+}
+
+.search-div button:hover{
+    background-color: #37404f;
+    cursor: pointer;
+}
+
