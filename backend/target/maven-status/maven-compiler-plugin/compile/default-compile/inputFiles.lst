@@ -1,0 +1,5 @@
+/home/s3pi0l/Documents/GymAPI/backend/src/main/java/GymAPI/project/Exercise.java
+/home/s3pi0l/Documents/GymAPI/backend/src/main/java/GymAPI/project/data/JdbcExerciseRepository.java
+/home/s3pi0l/Documents/GymAPI/backend/src/main/java/GymAPI/project/web/ExerciseController.java
+/home/s3pi0l/Documents/GymAPI/backend/src/main/java/GymAPI/project/ProjectApplication.java
+/home/s3pi0l/Documents/GymAPI/backend/src/main/java/GymAPI/project/data/ExerciseRepository.java
