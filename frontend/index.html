@@ -5,35 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gym compendium</title>
     <link rel="stylesheet" href="style.css">
+    <script src="style.css"></script>
 </head>
 <body>
     <main>
         <div class="search-div">
             <h3>Which exercise do you need?</h3>
             <div>
-                <select name="muscle" id="muscle-menu">
-                    <option value="Chest">Chest</option>
-                    <option value="Biceps">Biceps</option>
-                    <option value="Triceps">Triceps</option>
-                    <option value="Lats">Lats</option>
-                    <option value="Traps">Traps</option>
-                    <option value="Quads">Quads</option>
-                    <option value="Hamstrings">Hamstrings</option>
-                </select>
-                <select name="equipment" id="equipment-menu">
-                    <option value="Dumbells">Dumbells</option>
-                    <option value="Barbell">Barbell</option>
-                    <option value="Bodyweight">Bodyweight</option>
-                    <option value="Machine">Machine</option>
-                </select>
+                <div>
+                    <h4>Muscle :</h4>
+                    <select name="muscle" id="muscle-menu">
+                        <option value="Chest">Chest</option>
+                        <option value="Biceps">Biceps</option>
+                        <option value="Triceps">Triceps</option>
+                        <option value="Lats">Lats</option>
+                        <option value="Traps">Traps</option>
+                        <option value="Quads">Quads</option>
+                        <option value="Hamstrings">Hamstrings</option>
+                    </select>
+                </div>
+                <div>
+                    <h4>Equipment :</h4>
+                    <select name="equipment" id="equipment-menu">
+                        <option value="Dumbells">Dumbells</option>
+                        <option value="Barbell">Barbell</option>
+                        <option value="Bodyweight">Bodyweight</option>
+                        <option value="Machine">Machine</option>
+                    </select>
+                </div>
             </div>
             <button>Search</button>
         </div>
-        <div>
+        <div class="cards-container">
             <div class="exercise-card">
                 <h3>Exercise name</h3>
-                <p>Muscle : muscle</p>
-                <p>equipment</p>
+                <p><b>Muscle</b> : muscle</p>
+                <p><b>Equipment</b> : equipment</p>
+                <iframe width="500em" height="350em" src="https://www.youtube.com/embed/jNQXAC9IVRw" 
+                title="Me at the zoo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="exercise-card">
+                <h3>Exercise name</h3>
+                <p><b>Muscle</b> : muscle</p>
+                <p><b>Equipment</b> : equipment</p>
+                <iframe width="500em" height="350em" src="https://www.youtube.com/embed/jNQXAC9IVRw" 
+                title="Me at the zoo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="exercise-card">
+                <h3>Exercise name</h3>
+                <p><b>Muscle</b> : muscle</p>
+                <p><b>Equipment</b> : equipment</p>
                 <iframe width="500em" height="350em" src="https://www.youtube.com/embed/jNQXAC9IVRw" 
                 title="Me at the zoo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
                 encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

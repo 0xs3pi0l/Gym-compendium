@@ -43,7 +43,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 main {
     margin: 0 auto;
-    width: 600px;
+    width: 700px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -71,8 +71,8 @@ main {
     justify-content: space-around;
 }
 
-select {
-    margin: 1em;
+.search-div h4 {
+    margin-right: 0.5em;
 }
 
 .search-div button {
@@ -108,15 +108,17 @@ select {
 .exercise-card h3{
     margin: 1em;
     font-size: 2em;
+    text-align: center;
 }
 
 .exercise-card p{
-    margin-left: 1.3em;
+    margin-left: 2.8em;
     font-size: 1.5em;
 }
 
 iframe {
-    margin: 1em;
+    margin: 2em;
+    margin-left: 4em;
     border-radius: 15px;
 }
 
