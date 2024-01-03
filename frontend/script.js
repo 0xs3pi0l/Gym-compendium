@@ -2,8 +2,6 @@ let button = document.getElementsByTagName("button")[0];
 button.addEventListener("click", fetchContent);
 
 function fetchContent(){
-    
-    console.log("OK");
     let selects = document.getElementsByTagName("select");
     let muscle = selects[0].value;
     let equipment = selects[1].value;
@@ -11,23 +9,22 @@ function fetchContent(){
 
     fetch(url)
         .then(response => response.json())
-        .then(data => swapContent(data))
-    //swapContent(content);
+        .then(data => insertContent(data))
 }
 
 
-function swapContent(jsonData){
+function insertContent(jsonData){
     let cardsContainer = document.getElementsByClassName("cards-container")[0];
-    let exerciseCard = createCard(jsonData[0]);
-    cardsContainer.appendChild(exerciseCard);
-    
+    cardsContainer.innerHTML = '';
+    for(let i = 0; i < jsonData.length; i++){
+        cardsContainer.appendChild(createCard(jsonData[i]));
+    }    
 }
 
 function createCard(jsonData){
     let muscle = jsonData.muscle;
     let equipment = jsonData.equipment;
     let embedLink = jsonData.link.substring(32,43)
-    console.log(embedLink);
     let exerciseCard = document.createElement("div");
     exerciseCard.className="exercise-card"
     exerciseCard.innerHTML = `
