@@ -133,3 +133,43 @@ iframe {
     text-align: center;
 }
 
+
+/* RERSPONSIVE DESIGN */
+
+@media(max-width : 500px){
+    
+    .exercise-card h3{
+        font-size: 3em;
+    }
+
+    .exercise-card p{
+        font-size: 2em;
+    }
+
+    .search-div h3 {
+        font-size: 3em;
+        text-align: center;
+    }
+
+    .search-div h4 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    #muscle-menu {
+        font-size: 1.5em;
+    }
+
+    #equipment-menu {
+        font-size: 1.5em;
+    }
+
+    .search-div div {
+        flex-direction: column;
+        margin: 0 2em 2em 2em;
+    }
+
+    .search-div button {
+        font-size: 1.5em;
+    }
+}
